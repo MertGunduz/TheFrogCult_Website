@@ -122,11 +122,11 @@
 
 main {
       background-color: rgb(98, 165, 51);
-      padding: 2%;
+      padding: 20px;
 }
 
 .music-play-div {
-      transition: all 0.2s;
+      transition: all ease 0.3s;
       background-color: rgba(0, 0, 0, 0.3);
       padding: 20px;
       position: fixed;
@@ -138,7 +138,7 @@ main {
 }
 
 .music-play-div:hover {
-      transition: all 0.2s;
+      transition: all ease 0.3s;
       background-color: rgba(0, 0, 0, 0.5);
       box-shadow: 0px 0px 30px 2px rgba(254, 157, 42, 0.3);
 }
@@ -150,6 +150,44 @@ main {
 .music-play-div .music-card-div img {
       user-select: none;
       outline: none;
+}
+
+.fun-cards-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+}
+
+.fun-card-div {
+      transition: all ease 0.3s;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 30px;
+      border-radius: 10px;
+      color: white;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 200px;
+      width: 300px;
+      cursor: pointer;
+      box-shadow: 3px 3px 16px 1px rgba(0, 0, 0, 0.8);
+}
+
+.fun-card-div:hover {
+      transition: all ease 0.3s;
+      background-color: rgba(0, 0, 0, 0.5);
+      transform: scale(1.06);
+}
+
+.fun-card-div img {
+      margin: 10px;
+} 
+
+.fun-card-div h3 {
+      margin: 10px 0px;
 }
 
 /* |---------------| */
