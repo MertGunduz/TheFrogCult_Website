@@ -15,13 +15,14 @@
       background-color: rgb(98, 165, 51);
 }
 
-.top-navbar img {
+.top-navbar .navbar-logo-hyperlink {
       margin: 20px;
 }
 
-.top-navbar input {
+.top-navbar .hamburger-button-img {
       margin: 20px;
       display: none;
+      cursor: pointer;
 }
 
 .top-navbar ul {
@@ -84,6 +85,10 @@
       transform: scale(1,1);
 }
 
+/* |---------------| */
+/* | MEDIA QUERIES | */
+/* |---------------| */
+
 @media screen and (max-width: 600px) { /* OLD TABLETS */
       .top-navbar {
             padding-bottom: 0px;
@@ -95,25 +100,48 @@
       }
 
       .top-navbar input {
+            display: inline;
+      }
+}
+
+@media screen and (max-width: 600px) { /* OLD TABLETS */
+      .top-navbar .hamburger-button-img {
             display: unset;
       }
 }
 
-
-@media screen and (max-width: 375px) { /* MID SIZE PHONES */
-      .top-navbar img {
-            width: 280px;
-      }
-}
-
-@media screen and (max-width: 360px) { /* LITTLE SIZE PHONES */
-      .top-navbar img {
+@media screen and (max-width: 375px) { /* MID SIZED PHONES */
+      .top-navbar .navbar-logo-img {
             width: 260px;
       }
 }
 
+@media screen and (max-width: 360px) { /* MID-LITTLE SIZED PHONES */
+      .top-navbar .navbar-logo-img {
+            width: 240px;
+      }
+
+      .top-navbar .hamburger-button-img {
+            width: 18px;
+      }
+}
+
+@media screen and (max-width: 320px) { /* LITTLE SIZED PHONES*/
+      .top-navbar .navbar-logo-img {
+            width: 200px;
+      }
+
+      .top-navbar .hamburger-button-img {
+            width: 15px;
+      }
+}
+
 @media screen and (max-width: 280px) { /* FOLD TYPED PHONES */
-      .top-navbar img {
+      .top-navbar .navbar-logo-img {
             width: 180px;
+      }
+
+      .top-navbar .hamburger-button-img {
+            width: 16px;
       }
 }
