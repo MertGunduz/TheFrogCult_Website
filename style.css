@@ -8,15 +8,18 @@
 }
 
 .top-navbar {
+      user-select: none;
       display: flex;
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap;
       background-color: rgb(98, 165, 51);
+      outline: none;
 }
 
 .top-navbar .navbar-logo-hyperlink {
       margin: 20px;
+      outline: none;
 }
 
 .top-navbar .hamburger-button-img {
@@ -33,6 +36,7 @@
       list-style: none;
       display: inline;
       margin: 0px 20px;
+      outline: none;
 }
 
 .top-navbar ul li a {
@@ -41,6 +45,7 @@
       padding: 10px 20px;
       border-radius: 20px;
       font-size: 1.2rem;
+      outline: none;
 }
 
 .top-navbar ul li a .navbar-button-icon-img {
@@ -89,6 +94,64 @@
       transform: scale(1,1);
 }
 
+.index-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      background-image: url(Images/HeaderPhotos/TheFrogCult_RedEyedFrogHeader.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 5%;
+      box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.8);
+}
+
+.main-header {
+      color: white;
+      font-size: 5rem;
+      margin: 20px;
+}
+
+.description-header {
+      color: white;
+      font-size: 2rem;
+      margin: 20px;
+}
+
+main {
+      background-color: rgb(98, 165, 51);
+      padding: 2%;
+}
+
+.music-play-div {
+      transition: all 0.2s;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      position: fixed;
+      top: 50%;
+      right: 0%;
+      border-bottom-left-radius: 60%;
+      border-top-left-radius: 60%;
+      box-shadow: 0px 0px 30px 2px rgba(98, 165, 51, 0.3)
+}
+
+.music-play-div:hover {
+      transition: all 0.2s;
+      background-color: rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 30px 2px rgba(254, 157, 42, 0.3);
+}
+
+.music-play-div .music-card-div {
+      cursor: pointer;
+}
+
+.music-play-div .music-card-div img {
+      user-select: none;
+      outline: none;
+}
+
 /* |---------------| */
 /* | MEDIA QUERIES | */
 /* |---------------| */
@@ -109,6 +172,10 @@
       .top-navbar {
             padding-bottom: 0px;
             justify-content: space-between;
+      }
+
+      .index-header {
+            background-position: left;
       }
 }
 
