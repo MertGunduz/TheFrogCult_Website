@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+}
+
+.top-navbar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: rgb(98, 165, 51);
+}
+
+.top-navbar img {
+      margin: 20px;
+}
+
+.top-navbar input {
+      margin: 20px;
+      display: none;
+}
+
+.top-navbar ul {
+      margin: 20px;
+}
+
+.top-navbar ul li {
+      list-style: none;
+      display: inline;
+      margin: 0px 20px;
+}
+
+.top-navbar ul li a {
+      text-decoration: none;
+      font-weight: 400;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 1.2rem;
+}
+
+.nav-button {
+      color: #FFF;
+      transition: all 0.5s;
+      position: relative;
+}
+
+.nav-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-color: transparent;
+      transition: all 0.3s;
+}
+
+.nav-button:hover::before {
+      opacity: 0 ;
+      transform: scale(0.5,0.5);
+}
+
+.nav-button::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+      transition: all 0.3s;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      transform: scale(1.2,1.2);
+}
+
+.nav-button:hover::after {
+      opacity: 1;
+      transform: scale(1,1);
+}
+
+@media screen and (max-width: 600px) { /* OLD TABLETS */
+      .top-navbar {
+            padding-bottom: 0px;
+            justify-content: space-between;
+      }
+
+      .top-navbar ul {
+            display: none;
+      }
+
+      .top-navbar input {
+            display: unset;
+      }
+}
+
+
+@media screen and (max-width: 375px) { /* MID SIZE PHONES */
+      .top-navbar img {
+            width: 280px;
+      }
+}
+
+@media screen and (max-width: 360px) { /* LITTLE SIZE PHONES */
+      .top-navbar img {
+            width: 260px;
+      }
+}
+
+@media screen and (max-width: 280px) { /* FOLD TYPED PHONES */
+      .top-navbar img {
+            width: 180px;
+      }
+}
