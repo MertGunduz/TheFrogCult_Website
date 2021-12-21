@@ -43,6 +43,10 @@
       font-size: 1.2rem;
 }
 
+.top-navbar ul li a .navbar-button-icon-img {
+      margin-left: 10px;
+}
+
 .nav-button {
       color: #FFF;
       transition: all 0.5s;
@@ -89,25 +93,27 @@
 /* | MEDIA QUERIES | */
 /* |---------------| */
 
-@media screen and (max-width: 600px) { /* OLD TABLETS */
-      .top-navbar {
-            padding-bottom: 0px;
-            justify-content: space-between;
+@media screen and (max-width: 768px) { /* NEW TABLETS & IPAD'S */
+      .top-navbar .hamburger-button-img {
+            width: 22px;
+      }
+
+      .top-navbar .hamburger-button-img {
+            display: unset;
       }
 
       .top-navbar ul {
             display: none;
       }
 
-      .top-navbar input {
-            display: inline;
+      .top-navbar {
+            padding-bottom: 0px;
+            justify-content: space-between;
       }
 }
 
 @media screen and (max-width: 600px) { /* OLD TABLETS */
-      .top-navbar .hamburger-button-img {
-            display: unset;
-      }
+
 }
 
 @media screen and (max-width: 375px) { /* MID SIZED PHONES */
