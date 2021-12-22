@@ -16,6 +16,7 @@ var i = 0;
 const songButton = document.querySelector(".music-play-div");
 const musicToPlay = new Audio("Audio/TheFrogCult_Music.wav");
 const musicPlayerImage = document.querySelector("#music-player-img");
+const modalMusicButton = document.querySelector(".modal-music-button");
 
 openModalButton.addEventListener("click", function() {
       modalBackground.style.visibility = "visible";
@@ -49,5 +50,29 @@ songButton.addEventListener("click", function() {
             musicToPlay.pause();
       }
       
+      i++;
+});
+
+ modalMusicButton.addEventListener("click", function() {
+      if (i % 2 == 0)
+      {
+            musicPlayerImage.src = "Images/Icons/TheFrogCult_StopIcon.svg";
+            musicToPlay.play();
+            modalMusicButton.innerHTML = "Stop Music";
+      }
+      else 
+      {
+            musicPlayerImage.src = "Images/Icons/TheFrogCult_StartIcon.svg";
+            musicToPlay.pause();
+            modalMusicButton.innerHTML = "Play Music";
+      }
+      
+      modalBackground.style.visibility = "hidden";
+
+      navbarPart.style.filter = "blur(0px)";
+      indexHeaderPart.style.filter = "blur(0px)";
+      indexMainPart.style.filter = "blur(0px)";
+      informationFooterPart.style.filter = "blur(0px)";
+
       i++;
 });
