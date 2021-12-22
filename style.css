@@ -351,6 +351,10 @@ footer p {
       .index-header {
             padding: 7%;
       }
+
+      .music-play-div {
+            display: none;
+      }
 }
 
 @media screen and (max-width: 600px) { /* OLD TABLETS */
