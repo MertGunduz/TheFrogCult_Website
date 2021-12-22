@@ -94,6 +94,58 @@
       transform: scale(1,1);
 }
 
+.modal-background-div {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      box-shadow: inset 0px 0px 40px 1px rgba(98, 165, 51, 0.7);
+      position: fixed;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+}
+
+.modal-background-div .modal-content-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+}
+
+.modal-background-div .modal-content-div .close-modal-span {
+      position: fixed;
+      top: 2.5%;
+      right: 2.5%;
+      cursor: pointer;
+}
+
+.modal-background-div .modal-content-div ul li {
+      list-style-type: none;
+      margin: 100px;
+}
+
+.modal-background-div .modal-content-div ul li a {
+      font-size: 2rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 30px;
+}
+
+.modal-background-div .modal-content-div ul li button {
+      font-size: 2rem;
+      color: white;
+      background: linear-gradient(rgb(98, 165, 51), rgb(115, 230, 69));
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+}
+
 .index-header {
       display: flex;
       justify-content: center;
@@ -123,18 +175,18 @@
 main {
       background-color: rgb(98, 165, 51);
       padding: 20px;
+      border-bottom: 1px solid rgba(49, 55, 62, 0.5);
 }
 
 .music-play-div {
       transition: all ease 0.3s;
       background-color: rgba(0, 0, 0, 0.3);
-      padding: 20px;
+      padding: 14px;
       position: fixed;
-      top: 50%;
+      bottom: 0%;
       right: 0%;
-      border-bottom-left-radius: 60%;
-      border-top-left-radius: 60%;
-      box-shadow: 0px 0px 30px 2px rgba(98, 165, 51, 0.3)
+      border-top-left-radius: 16%;
+      box-shadow: 0px 0px 30px 2px rgba(98, 165, 51, 0.3);
 }
 
 .music-play-div:hover {
@@ -190,6 +242,81 @@ main {
       margin: 10px 0px;
 }
 
+footer {
+      background-color: rgb(98, 165, 51);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      user-select: none;
+      outline: none;
+      padding: 10px;
+}
+
+footer ul {
+      margin: 20px;
+}
+
+footer ul li {
+      list-style: none;
+      display: inline;
+      margin: 20px;
+      outline: none;
+}
+
+footer ul li span {
+      color: white;
+      font-weight: bold;
+}
+
+footer ul li a {
+      transition: all ease 0.3s;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      outline: none;
+      color: rgb(52, 52, 52);
+}
+
+footer ul li a:hover {
+      transition: all ease 0.3s;
+      color: white;
+}
+
+footer p {
+      font-weight: bold;
+      margin: 20px;
+      color: white;
+      user-select: text;
+}
+
+/* |------------------| */
+/* | CUSTOM SCROLLBAR | */
+/* |------------------| */
+
+/* width */
+::-webkit-scrollbar {
+      width: 10px;
+      background: rgba(0, 0, 0, 0.7);
+}
+    
+::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px transparent; 
+      border-radius: 20px;
+}
+     
+::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.3); 
+      border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.5); 
+}
+
+::-webkit-scrollbar-thumb:active {
+      background: rgba(0, 0, 0, 0.6);
+}
+
 /* |---------------| */
 /* | MEDIA QUERIES | */
 /* |---------------| */
@@ -215,10 +342,24 @@ main {
       .index-header {
             background-position: left;
       }
+
+      footer {
+            justify-content: center;
+            flex-direction: column;
+      }
+
+      .index-header {
+            padding: 7%;
+      }
 }
 
 @media screen and (max-width: 600px) { /* OLD TABLETS */
-
+      footer ul li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+      }
 }
 
 @media screen and (max-width: 375px) { /* MID SIZED PHONES */
