@@ -105,6 +105,8 @@
       justify-content: center;
       align-items: center;
       visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.3s;
 }
 
 .modal-background-div .modal-content-div {
@@ -365,6 +367,36 @@ footer p {
             align-items: center;
             flex-direction: column;
       }
+
+      .close-modal-span img {
+            width: 18px;
+      }
+
+      .modal-background-div .modal-content-div ul li a {
+            font-size: 1.4rem;
+      }
+
+      .modal-background-div .modal-content-div ul li button {
+            font-size: 1.4rem;
+      }
+}
+
+@media screen and (max-width: 420px) { /* LARGE SIZED PHONES */
+      .close-modal-span img {
+            width: 16px;
+      }
+
+      .modal-background-div .modal-content-div ul li {
+            margin: 85px;
+      }
+
+      .modal-background-div .modal-content-div ul li a {
+            font-size: 1.2rem;
+      }
+
+      .modal-background-div .modal-content-div ul li button {
+            font-size: 1.2rem;
+      }
 }
 
 @media screen and (max-width: 375px) { /* MID SIZED PHONES */
@@ -381,6 +413,22 @@ footer p {
       .top-navbar .hamburger-button-img {
             width: 18px;
       }
+
+      .close-modal-span img {
+            width: 14px;
+      }
+
+      .modal-background-div .modal-content-div ul li {
+            margin: 70px;
+      }
+
+      .modal-background-div .modal-content-div ul li a {
+            font-size: 1.2rem;
+      }
+
+      .modal-background-div .modal-content-div ul li button {
+            font-size: 1.2rem;
+      }
 }
 
 @media screen and (max-width: 320px) { /* LITTLE SIZED PHONES*/
@@ -390,6 +438,22 @@ footer p {
 
       .top-navbar .hamburger-button-img {
             width: 15px;
+      }
+
+      .close-modal-span img {
+            width: 14px;
+      }
+
+      .modal-background-div .modal-content-div ul li {
+            margin: 60px;
+      }
+
+      .modal-background-div .modal-content-div ul li a {
+            font-size: 1.1rem;
+      }
+
+      .modal-background-div .modal-content-div ul li button {
+            font-size: 1.1rem;
       }
 }
 

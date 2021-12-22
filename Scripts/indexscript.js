@@ -20,17 +20,19 @@ const modalMusicButton = document.querySelector(".modal-music-button");
 
 openModalButton.addEventListener("click", function() {
       modalBackground.style.visibility = "visible";
+      modalBackground.style.opacity = "1";
 
       songButton.style.visibility = "hidden";
 
-      navbarPart.style.filter = "blur(5px)";
-      indexHeaderPart.style.filter = "blur(5px)";
-      indexMainPart.style.filter = "blur(5px)";
-      informationFooterPart.style.filter = "blur(5px)";
+      navbarPart.style.filter = "blur(3px)";
+      indexHeaderPart.style.filter = "blur(3px)";
+      indexMainPart.style.filter = "blur(3px)";
+      informationFooterPart.style.filter = "blur(3px)";
 });
 
 closeModalButton.addEventListener("click", function() {
       modalBackground.style.visibility = "hidden";
+      modalBackground.style.opacity = "0";
 
       navbarPart.style.filter = "blur(0px)";
       indexHeaderPart.style.filter = "blur(0px)";
