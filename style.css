@@ -163,6 +163,20 @@
       box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.8);
 }
 
+.about-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      background-image: url(Images/HeaderPhotos/TheFrogCult_RunningFrogHeader.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 5%;
+      box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.8);
+}
+
 .main-header {
       color: white;
       font-size: 5rem;
@@ -243,6 +257,20 @@ main {
 
 .fun-card-div h3 {
       margin: 10px 0px;
+}
+
+.practices-stories-div {
+      color: white;
+      padding: 1% 5%;
+}
+
+.practices-stories-div h2 {
+      color: rgb(52, 52, 52);
+      margin: 20px;
+}
+
+.practices-stories-div p {
+      margin: 20px;
 }
 
 footer {
