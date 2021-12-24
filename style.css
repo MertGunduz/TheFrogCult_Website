@@ -7,6 +7,10 @@
       font-family: 'Open Sans', sans-serif;
 }
 
+body {
+      background-color: rgb(98, 165, 51);
+}
+
 .top-navbar {
       user-select: none;
       display: flex;
@@ -177,6 +181,20 @@
       box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.8);
 }
 
+.limbo-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      background-image: url(Images/HeaderPhotos/TheFrogCult_TwoFrogsHeader.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 5%;
+      box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.8);
+}
+
 .main-header {
       color: white;
       font-size: 5rem;
@@ -271,6 +289,61 @@ main {
 
 .practices-stories-div p {
       margin: 20px;
+}
+
+.limbo-stories-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+.limbo-story-div {
+      transition: all ease 0.3s;
+      max-width: 1000px;
+      border-radius: 20px;
+      background-color: rgb(68, 115, 36);
+      color: white;
+      border: 2px solid rgb(52, 52, 52);
+      box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.5);
+      margin: 20px;
+}
+
+.limbo-story-div:hover {
+      transition: all ease 0.3s;
+      transform: scale(1.02);
+      box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.5);
+      background-color: rgb(59, 99, 33);
+}
+
+.limbo-story-div h1 {
+      padding: 20px;
+      color: rgb(52, 52, 52);
+      border-radius: 20px 20px 0% 0%;
+}
+
+.limbo-story-div h1 a {
+      transition: all ease 0.3s;
+      text-decoration: none;
+      color: rgb(52, 52, 52);
+      text-decoration: 1px wavy underline rgb(52, 52, 52);
+}
+
+.limbo-story-div h1 a:hover {
+      transition: all ease 0.3s;
+      text-decoration: 2px wavy underline white;
+      color: white;
+}
+
+.limbo-story-div p {
+      margin: 0%;
+      padding: 20px;
+      border-radius: 20px;
+}
+
+.limbo-thumbnail-img {
+      width: 100%;      
+      margin: 0%;
 }
 
 footer {
@@ -388,17 +461,17 @@ footer p {
             background-position: left;
       }
 
-      footer {
-            justify-content: center;
-            flex-direction: column;
-      }
-
       .index-header {
             padding: 7%;
       }
 
       .music-play-div {
             display: none;
+      }
+
+      footer {
+            justify-content: center;
+            flex-direction: column;
       }
 }
 
