@@ -352,6 +352,20 @@ footer p {
 /* | MEDIA QUERIES | */
 /* |---------------| */
 
+@media screen and (max-width: 870px) {
+      .top-navbar ul li a {
+            font-size: 1rem;
+      }
+
+      footer ul li span {
+            display: none;
+      }
+
+      footer {
+            justify-content: space-between;
+      }
+}
+
 @media screen and (max-width: 768px) { /* NEW TABLETS & IPAD'S */
       .top-navbar .hamburger-button-img {
             width: 22px;

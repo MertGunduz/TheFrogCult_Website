@@ -7,8 +7,8 @@ const modalBackground = document.querySelector(".modal-background-div");
 
 // Blur Parts
 const navbarPart = document.querySelector(".top-navbar");
-const indexHeaderPart = document.querySelector(".index-header")
-const indexMainPart = document.querySelector(".index-main");
+const aboutHeaderPart = document.querySelector(".about-header");
+const aboutMainPart = document.querySelector(".index-main");
 const informationFooterPart = document.querySelector(".information-footer");
 
 // Fixed Song Button & Audio Stuff
@@ -25,8 +25,8 @@ openModalButton.addEventListener("click", function() {
       songButton.style.visibility = "hidden";
 
       navbarPart.style.filter = "blur(3px)";
-      indexHeaderPart.style.filter = "blur(3px)";
-      indexMainPart.style.filter = "blur(3px)";
+      aboutHeaderPart.style.filter = "blur(3px)";
+      aboutMainPart.style.filter = "blur(3px)";
       informationFooterPart.style.filter = "blur(3px)";
 });
 
@@ -35,8 +35,8 @@ closeModalButton.addEventListener("click", function() {
       modalBackground.style.opacity = "0";
 
       navbarPart.style.filter = "blur(0px)";
-      indexHeaderPart.style.filter = "blur(0px)";
-      indexMainPart.style.filter = "blur(0px)";
+      aboutHeaderPart.style.filter = "blur(0px)";
+      aboutMainPart.style.filter = "blur(0px)";
       informationFooterPart.style.filter = "blur(0px)";
 });
 
@@ -72,8 +72,8 @@ songButton.addEventListener("click", function() {
       modalBackground.style.visibility = "hidden";
 
       navbarPart.style.filter = "blur(0px)";
-      indexHeaderPart.style.filter = "blur(0px)";
-      indexMainPart.style.filter = "blur(0px)";
+      aboutHeaderPart.style.filter = "blur(0px)";
+      aboutMainPart.style.filter = "blur(0px)";
       informationFooterPart.style.filter = "blur(0px)";
 
       i++;
