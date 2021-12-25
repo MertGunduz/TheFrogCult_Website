@@ -309,6 +309,21 @@ main {
       margin: 20px;
 }
 
+.limbo-story-div .limbo-description-text a {
+      transition: all ease 0.3s;
+      color: rgb(98, 165, 51);
+      font-weight: bold;
+      text-shadow: 2px 2px 7px rgba(254, 157, 42, 0.3);
+      text-decoration: 1px wavy underline rgb(98, 165, 51);
+}
+
+.limbo-story-div .limbo-description-text a:hover {
+      transition: all ease 0.3s;
+      color: rgb(254, 157, 42);
+      text-decoration: 1px wavy underline rgb(254, 157, 42);
+      text-shadow: 2px 2px 7px rgb(98, 165, 51);
+}
+
 .limbo-story-div:hover {
       transition: all ease 0.3s;
       transform: scale(1.02);
