@@ -511,6 +511,12 @@ footer p {
       }
 }
 
+@media screen and (max-width: 540px) { /* Surface Duo */
+      .modal-background-div .modal-content-div ul li {
+            margin: 80px;
+      }
+}
+
 @media screen and (max-width: 420px) { /* LARGE SIZED PHONES */
       .close-modal-span img {
             width: 16px;
