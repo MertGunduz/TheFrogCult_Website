@@ -195,6 +195,42 @@ body {
       box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.8);
 }
 
+.memes-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      background-image: url(Images/HeaderPhotos/TheFrogCult_BlueFrogHeader.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 5%;
+      box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.8);
+} 
+
+.meme-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+.meme-section img {
+      margin: 10px;
+      transition: all ease 0.3s;
+      width: 40%;
+      border-radius: 20px;
+      border: 2px solid rgb(52, 52, 52);
+      box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.6);
+}
+
+.meme-section img:hover {
+      transition: all ease 0.3s;
+      box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.8);    
+      transform: scale(1.02); 
+}
+
 .main-header {
       color: white;
       font-size: 5rem;
@@ -440,6 +476,12 @@ footer p {
 /* | MEDIA QUERIES | */
 /* |---------------| */
 
+@media screen and (max-width: 1024px) { /* IPAD PRO & BIG TABLETS*/
+      .meme-section img {
+            width: 60%;
+      }
+}
+
 @media screen and (max-width: 870px) {
       .top-navbar ul li a {
             font-size: 1rem;
@@ -518,6 +560,10 @@ footer p {
 }
 
 @media screen and (max-width: 420px) { /* LARGE SIZED PHONES */
+      .meme-section img {
+            width: 80%;
+      }
+
       .close-modal-span img {
             width: 16px;
       }
