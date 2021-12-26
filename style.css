@@ -703,6 +703,14 @@ footer p {
       .modal-background-div .modal-content-div ul li button {
             font-size: 1.2rem;
       }
+
+      .story-practice-card-div {
+            height: 370px;
+      }
+
+      .story-practice-card-div img {
+            width: 120px;
+      }
 }
 
 @media screen and (max-width: 320px) { /* LITTLE SIZED PHONES*/
@@ -729,6 +737,14 @@ footer p {
       .modal-background-div .modal-content-div ul li button {
             font-size: 1.1rem;
       }
+
+      .story-practice-card-div {
+            height: 370px;
+      }
+
+      .story-practice-card-div img {
+            width: 100px;
+      }
 }
 
 @media screen and (max-width: 280px) { /* FOLD TYPED PHONES */
@@ -738,5 +754,17 @@ footer p {
 
       .top-navbar .hamburger-button-img {
             width: 16px;
+      }
+
+      .story-practice-card-div {
+            height: 370px;
+      }
+
+      .story-practice-card-div img {
+            width: 80px;
+      }
+
+      .story-practice-card-div h3 {
+            font-size: 1.1rem;
       }
 }
