@@ -209,6 +209,20 @@ body {
       box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.8);
 } 
 
+.thecult-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      background-image: url(Images/HeaderPhotos/TheFrogCult_GreenPinkFrogHeader.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 5%;
+      box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.8);
+}
+
 .meme-section {
       display: flex;
       justify-content: center;
