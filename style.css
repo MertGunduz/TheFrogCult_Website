@@ -238,6 +238,20 @@ body {
       box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.8);
 }
 
+.practices-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      background-image: url(Images/HeaderPhotos/TheFrogCult_LeafFrogHeader.jpg);
+      background-position: top;     
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 5%;
+      box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.8);
+}
+
 .meme-section {
       display: flex;
       justify-content: center;
@@ -343,6 +357,7 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
 }
 
 .cult-story-div {
@@ -353,6 +368,7 @@ main {
       border-radius: 20px;
       color: white;
       box-shadow: 3px 3px 16px 1px rgba(0, 0, 0, 0.8);
+      margin: 10px 20px;
 }
 
 .cult-story-div:hover {
@@ -715,6 +731,10 @@ footer p {
       .modal-background-div .modal-content-div ul li button {
             font-size: 1.2rem;
       }
+
+      .practices-header h1 {
+            font-size: 4rem;
+      }
 }
 
 @media screen and (max-width: 375px) { /* MID SIZED PHONES */
@@ -818,5 +838,9 @@ footer p {
 
       .cult-stories-section .cult-story-div {
             width: 90%
+      }
+
+      .practices-header h1 {
+            font-size: 3rem;
       }
 }
