@@ -118,6 +118,7 @@ body {
       justify-content: center;
       align-items: center;
       text-align: center;
+      flex-wrap: wrap;
 }
 
 .modal-background-div .modal-content-div .close-modal-span {
@@ -265,7 +266,7 @@ body {
 
 .story-practice-card-div {
       transition: all ease 0.3s;
-      width: 40%;
+      width: 45%;
       background-color: rgba(0, 0, 0, 0.4);
       text-align: center;
       display: flex;
@@ -273,7 +274,7 @@ body {
       align-items: center;
       flex-direction: column;
       margin: 20px;
-      padding: 30px;
+      padding: 40px;
       color: white;
       border-radius: 20px;
       box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.5);
@@ -542,6 +543,34 @@ footer p {
 
       footer {
             justify-content: space-between;
+      }
+}
+
+@media screen and (max-height: 600px) {
+      .modal-background-div ul li {
+            margin: 50px !important;
+            }
+
+      .modal-background-div ul li a {
+            font-size: 1.1rem !important;
+      }
+
+      .modal-background-div ul li button {
+            display: none;
+      }
+}
+
+@media screen and (max-height: 360px) {
+      .modal-background-div ul li {
+            margin: 40px !important;
+            }
+
+      .modal-background-div ul li a {
+            font-size: 1rem !important;
+      }
+
+      .modal-background-div span img {
+            width: 20px !important;
       }
 }
 
