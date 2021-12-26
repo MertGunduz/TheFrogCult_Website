@@ -224,6 +224,20 @@ body {
       box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.8);
 }
 
+.stories-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      background-image: url(Images/HeaderPhotos/TheFrogCult_WaterFrogHeader.jpg);
+      background-position: center;     
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 5%;
+      box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.8);
+}
+
 .meme-section {
       display: flex;
       justify-content: center;
@@ -323,6 +337,28 @@ main {
 .music-play-div .music-card-div img {
       user-select: none;
       outline: none;
+}
+
+.cult-stories-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.cult-story-div {
+      width: 70%;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 20px;
+      color: white;
+}
+
+.cult-story-div p {
+      margin: 10px;
+} 
+
+.cult-story-div h1 {
+      margin: 10px;
 }
 
 .fun-cards-div {
@@ -766,5 +802,13 @@ footer p {
 
       .story-practice-card-div h3 {
             font-size: 1.1rem;
+      }
+
+      .stories-header .main-header {
+            font-size: 4rem;
+      }
+
+      .cult-stories-section .cult-story-div {
+            width: 90%
       }
 }
