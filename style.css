@@ -346,11 +346,19 @@ main {
 }
 
 .cult-story-div {
+      transition: all ease 0.3s;
       width: 70%;
       background-color: rgba(0, 0, 0, 0.4);
       padding: 20px;
       border-radius: 20px;
       color: white;
+      box-shadow: 3px 3px 16px 1px rgba(0, 0, 0, 0.8);
+}
+
+.cult-story-div:hover {
+      transition: all ease 0.3s;
+      transform: scale(1.03);
+      box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.8);
 }
 
 .cult-story-div p {
