@@ -18,6 +18,16 @@ const musicToPlay = new Audio("Audio/TheFrogCult_Music.wav");
 const musicPlayerImage = document.querySelector("#music-player-img");
 const modalMusicButton = document.querySelector(".modal-music-button");
 
+// Sound Divs & Sounds
+const haveATeaDiv = document.querySelector("#have-a-tea-div");
+const orderARoosterDiv = document.querySelector("#order-a-rooster-div");
+const eatAntiDemonicDiv = document.querySelector("#eat-anti-demonic-matter-div");
+const takeANapDiv = document.querySelector("#take-a-nap-div");
+const haveATeaSound = new Audio("Audio/TheFrogCult_HaveATea.wav") 
+const yawnSound = new Audio("Audio/TheFrogCult_Yawn.wav");
+const roosterSound = new Audio("Audio/TheFrogCult_Rooster.wav");
+const eatingSound = new Audio("Audio/TheFrogCult_Eating.wav");
+
 openModalButton.addEventListener("click", function() {
       modalBackground.style.visibility = "visible";
       modalBackground.style.opacity = "1";
@@ -77,4 +87,20 @@ songButton.addEventListener("click", function() {
       informationFooterPart.style.filter = "blur(0px)";
 
       i++;
+});
+
+haveATeaDiv.addEventListener("click", function() {
+      haveATeaSound.play();
+});
+
+orderARoosterDiv.addEventListener("click", function() {
+      roosterSound.play();
+});
+
+eatAntiDemonicDiv.addEventListener("click", function() {
+      eatingSound.play();
+});
+
+takeANapDiv.addEventListener("click", function() {
+      yawnSound.play();
 });
