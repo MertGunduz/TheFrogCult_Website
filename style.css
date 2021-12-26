@@ -546,7 +546,7 @@ footer p {
       }
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 540px) {
       .modal-background-div ul li {
             margin: 50px !important;
             }
@@ -571,6 +571,20 @@ footer p {
 
       .modal-background-div span img {
             width: 20px !important;
+      }
+}
+
+@media screen and (max-height: 280px) {
+      .modal-background-div ul li {
+            margin: 30px !important;
+            }
+
+      .modal-background-div ul li a {
+            font-size: 0.9rem !important;
+      }
+
+      .modal-background-div span img {
+            width: 18px !important;
       }
 }
 
