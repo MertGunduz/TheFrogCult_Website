@@ -11,35 +11,39 @@ body {
       background-color: rgb(98, 165, 51);
 }
 
+.size-container {
+      max-width: 1280px !important;
+      margin-right: auto;
+      margin-left: auto;
+}
+
 .top-navbar {
+      width: 100%;
       user-select: none;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
       flex-wrap: wrap;
       background-color: rgb(98, 165, 51);
       outline: none;
+      padding: 20px;
+}
+
+.top-navbar .size-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 }
 
 .top-navbar .navbar-logo-hyperlink {
-      margin: 20px;
       outline: none;
 }
 
 .top-navbar .hamburger-button-img {
-      margin: 20px;
       display: none;
       cursor: pointer;
-}
-
-.top-navbar ul {
-      margin: 20px;
 }
 
 .top-navbar ul li {
       list-style: none;
       display: inline;
-      margin: 0px 20px;
       outline: none;
 }
 
@@ -50,6 +54,7 @@ body {
       border-radius: 20px;
       font-size: 1.2rem;
       outline: none;
+      margin-left: 30px;
 }
 
 .top-navbar ul li a .navbar-button-icon-img {
@@ -275,15 +280,15 @@ body {
 }
 
 .main-header {
+      text-align: center;
       color: white;
       font-size: 5rem;
-      margin: 20px;
+      margin-bottom: 20px;
 }
 
 .description-header {
       color: white;
       font-size: 2rem;
-      margin: 20px;
 }
 
 .stories-practices-cards-div {
@@ -385,42 +390,32 @@ main {
       margin: 10px;
 }
 
-.fun-cards-div {
+.fun-cards-div .size-container {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
+      flex-wrap: wrap;      
 }
 
 .fun-card-div {
       transition: all ease 0.3s;
       background-color: rgba(0, 0, 0, 0.3);
-      padding: 30px;
       border-radius: 10px;
       color: white;
-      margin: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      gap: 20px;
       height: 200px;
-      width: 300px;
+      width: 280px;
       cursor: pointer;
-      box-shadow: 3px 3px 16px 1px rgba(0, 0, 0, 0.8);
 }
 
 .fun-card-div:hover {
       transition: all ease 0.3s;
       background-color: rgba(0, 0, 0, 0.5);
       transform: scale(1.06);
-}
-
-.fun-card-div img {
-      margin: 10px;
-} 
-
-.fun-card-div h3 {
-      margin: 10px 0px;
 }
 
 .practices-stories-div {
@@ -509,31 +504,30 @@ main {
 
 footer {
       background-color: rgb(98, 165, 51);
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
       user-select: none;
       outline: none;
-      padding: 10px;
+      padding: 20px;
 }
 
-footer ul {
-      margin: 20px;
+footer .size-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 }
 
-footer ul li {
+footer .size-container ul li {
       list-style: none;
       display: inline;
       margin: 20px;
       outline: none;
 }
 
-footer ul li span {
+footer .size-container ul li span {
       color: white;
       font-weight: bold;
 }
 
-footer ul li a {
+footer .size-container ul li a {
       transition: all ease 0.3s;
       text-decoration: none;
       color: white;
@@ -542,12 +536,12 @@ footer ul li a {
       color: rgb(52, 52, 52);
 }
 
-footer ul li a:hover {
+footer .size-container ul li a:hover {
       transition: all ease 0.3s;
       color: white;
 }
 
-footer p {
+footer .size-container p {
       font-weight: bold;
       margin: 20px;
       color: white;
@@ -597,12 +591,53 @@ footer p {
             font-size: 1rem;
       }
 
-      footer ul li span {
+      footer ul #span-li {
+            display: none;
+      }
+}
+
+@media screen and (max-width: 1240px) {
+      .top-navbar ul {
             display: none;
       }
 
-      footer {
-            justify-content: space-between;
+      .top-navbar .hamburger-button-img {
+            display: unset;
+      }
+
+      .top-navbar .size-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between !important;
+            align-items: center;
+      }
+
+      .fun-cards-div .size-container .fun-card-div {
+            width: 49%;
+            margin-bottom: 1.5%;
+      }
+}
+
+@media screen and (max-width: 740px) {
+      footer .size-container ul {
+            display: none;
+      }
+
+      footer .size-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+}
+
+@media screen and (max-width: 600px) {
+      .fun-cards-div .size-container .fun-card-div {
+            width: 100%;
+            margin-bottom: 5%;
+      }
+
+      #take-a-nap-div {
+            margin-bottom: 0%;
       }
 }
 
@@ -659,11 +694,6 @@ footer p {
 
       .top-navbar ul {
             display: none;
-      }
-
-      .top-navbar {
-            padding-bottom: 0px;
-            justify-content: space-between;
       }
 
       .index-header {
