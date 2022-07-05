@@ -1,4 +1,4 @@
-# TheFrogCult Website
+# The Frog Cult Website
 
 ☉ Languages: <strong>HTML, CSS, JS</strong> <br>
 ☉ Website Type: <strong>Static</strong>
