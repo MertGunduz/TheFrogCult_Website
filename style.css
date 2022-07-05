@@ -434,17 +434,16 @@ main {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      gap: 20px;
 }
 
 .limbo-story-div {
       transition: all ease 0.3s;
-      max-width: 1000px;
       border-radius: 20px;
       background-color: rgb(68, 115, 36);
       color: white;
       border: 2px solid rgb(52, 52, 52);
       box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.5);
-      margin: 20px;
 }
 
 .limbo-story-div .limbo-description-text a {
