@@ -368,7 +368,7 @@ main {
 
 .cult-story-div {
       transition: all ease 0.3s;
-      width: 70%;
+      width: 100%;
       background-color: rgba(0, 0, 0, 0.4);
       padding: 20px;
       border-radius: 20px;
