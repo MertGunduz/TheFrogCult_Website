@@ -12,3 +12,7 @@
 ## Website Link (Click The Link Below)
 
 https://mertgunduz.github.io/TheFrogCult_Website/
+
+## Battur's YouTube Channel (Click The Link Below)
+
+https://www.youtube.com/c/Hachapuri69
