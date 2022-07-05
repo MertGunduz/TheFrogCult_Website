@@ -291,23 +291,24 @@ body {
       font-size: 2rem;
 }
 
-.stories-practices-cards-div {
+.stories-practices-cards-div .size-container {
       display: flex;
       justify-content: center;
       align-items: center;
+      gap: 20px;
 }
 
 .story-practice-card-div {
       transition: all ease 0.3s;
-      width: 45%;
+      width: 49%;
       background-color: rgba(0, 0, 0, 0.4);
       text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin: 20px;
       padding: 40px;
+      height: 350px;
       color: white;
       border-radius: 20px;
       box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.5);
