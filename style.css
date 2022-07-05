@@ -261,13 +261,14 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 20px;
 }
 
 .meme-section img {
-      margin: 10px;
       transition: all ease 0.3s;
-      width: 40%;
+      width: 49%;
+      height: 400px;
       border-radius: 20px;
       border: 2px solid rgb(52, 52, 52);
       box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.6);
@@ -576,9 +577,9 @@ footer .size-container p {
 /* | MEDIA QUERIES | */
 /* |---------------| */
 
-@media screen and (max-width: 1024px) { /* IPAD PRO & BIG TABLETS*/
+@media screen and (max-width: 1040px) {
       .meme-section img {
-            width: 60%;
+            width: 100%;
       }
 }
 
@@ -738,10 +739,6 @@ footer .size-container p {
 }
 
 @media screen and (max-width: 420px) { /* LARGE SIZED PHONES */
-      .meme-section img {
-            width: 80%;
-      }
-
       .close-modal-span img {
             width: 16px;
       }
